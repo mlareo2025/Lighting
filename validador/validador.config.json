@@ -1,0 +1,95 @@
+{
+  "$comment": "Configuración del validador. Ajusta niveles, modos y pares de contraste a tu sistema.",
+  "levels": [
+    "primitive",
+    "semantic",
+    "component"
+  ],
+  "allowedReferences": {
+    "primitive": [],
+    "semantic": [
+      "primitive"
+    ],
+    "component": [
+      "semantic"
+    ]
+  },
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "requireModes": {
+    "level": "semantic",
+    "types": [
+      "color"
+    ]
+  },
+  "namePattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+  "contrastPairs": [
+    {
+      "foreground": "semantic.color.text.primary",
+      "background": "semantic.color.surface.default",
+      "min": 4.5
+    },
+    {
+      "foreground": "semantic.color.text.secondary",
+      "background": "semantic.color.surface.default",
+      "min": 4.5
+    },
+    {
+      "foreground": "semantic.color.text.primary",
+      "background": "semantic.color.surface.subtle",
+      "min": 4.5
+    },
+    {
+      "foreground": "semantic.color.text.danger",
+      "background": "semantic.color.surface.default",
+      "min": 4.5
+    },
+    {
+      "foreground": "semantic.color.text.danger",
+      "background": "semantic.color.surface.danger",
+      "min": 4.5
+    },
+    {
+      "foreground": "semantic.color.text.success",
+      "background": "semantic.color.surface.default",
+      "min": 4.5
+    },
+    {
+      "foreground": "semantic.color.text.on-action",
+      "background": "semantic.color.action.default",
+      "min": 4.5
+    },
+    {
+      "foreground": "semantic.color.text.on-action",
+      "background": "semantic.color.action.hover",
+      "min": 4.5
+    },
+    {
+      "foreground": "semantic.color.text.on-action",
+      "background": "semantic.color.action.pressed",
+      "min": 4.5
+    },
+    {
+      "foreground": "semantic.color.action.default",
+      "background": "semantic.color.surface.default",
+      "min": 4.5
+    },
+    {
+      "foreground": "semantic.color.action.default",
+      "background": "semantic.color.action.subtle",
+      "min": 4.5
+    },
+    {
+      "foreground": "semantic.color.border.focus",
+      "background": "semantic.color.surface.default",
+      "min": 3
+    },
+    {
+      "foreground": "semantic.color.border.strong",
+      "background": "semantic.color.surface.default",
+      "min": 3
+    }
+  ]
+}
